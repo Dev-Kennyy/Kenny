@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiAlignRight } from 'react-icons/fi';
-import TheLists from './theLists';
+import TheLists from './TheLists.jsx';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
