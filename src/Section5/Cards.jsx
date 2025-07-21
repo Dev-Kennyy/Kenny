@@ -8,7 +8,7 @@ function Cards() {
         client="Ezra Akande"
         details="Best place to buy your gadgets Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Quasi debitis"
-        src="public/Screenshot (263).png"
+        src="Screenshot (263).png"
         height="h-[310px]"
       />
       <Card
@@ -16,7 +16,7 @@ function Cards() {
         client="John Ajala"
         details="Best place to buy your gadgets Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Quasi debitis"
-        src="public/Screenshot (263).png"
+        src="Screenshot (263).png"
         height="h-[350px]"
       />
       <Card
@@ -24,7 +24,7 @@ function Cards() {
         client="Samuel Ogunnaike"
         details="Best place to buy your gadgets Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Quasi debitis"
-        src="public/Screenshot (263).png"
+        src="Screenshot (263).png"
         height="h-[310px]"
       />
     </div>

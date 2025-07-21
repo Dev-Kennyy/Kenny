@@ -1,9 +1,9 @@
 function RightIntro() {
   return (
     <div className="relative">
-      <img src="public/Rectangle 1.png" width="" alt="" />
+      <img src="Rectangle 1.png" width="" alt="" />
       <img
-        src="public/231A9607__2_-removebg-preview.png"
+        src="231A9607__2_-removebg-preview.png"
         alt=""
         width="230px"
         height="100px"

@@ -7,7 +7,7 @@ function Sect3() {
       <div className="relative flex flex-col pt-9">
         <Heading />
         <img
-          src="public\react 1.png"
+          src="react 1.png"
           alt=""
           className="absolute z-10 object-cover opacity-15"
           style={{ right: 0, top: 0, padding: '' }}

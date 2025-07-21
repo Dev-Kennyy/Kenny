@@ -1,7 +1,7 @@
 function Right() {
   return (
     <div>
-      <img src="public/JS.png" alt="" />
+      <img src="JS.png" alt="" />
     </div>
   );
 }
