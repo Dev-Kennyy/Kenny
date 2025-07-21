@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <>
-      <div className="align-center sticky top-0 z-50 flex justify-between bg-white px-[50px] py-[40px] sm:pt-[60px]">
+      <div className="align-center sticky top-0 z-50 flex justify-between bg-white px-[50px] py-[20px] sm:pt-[30px]">
         <div className="text-xl font-extrabold">Dev_Kenny</div>
         <div
           className="block text-[32px] sm:hidden"
