@@ -2,7 +2,7 @@ import Button from '../UI/Button';
 
 function Sect2() {
   return (
-    <>
+    <div id="Sect2">
       <div className="mx-auto w-full max-w-6xl p-4 pt-[100px] text-center">
         <h1 className="text-4xl font-extrabold tracking-wide sm:text-7xl">
           Get in touch <br /> with me
@@ -18,7 +18,7 @@ function Sect2() {
         </p>
         <Button type="pink">Contact me</Button>
       </div>
-    </>
+    </div>
   );
 }
 

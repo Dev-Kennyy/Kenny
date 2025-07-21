@@ -1,9 +1,15 @@
 function TheLists() {
   return (
     <>
-      <li className="text-xl">About</li>
-      <li className="text-xl">What I do</li>
-      <li className="text-xl">My Project</li>
+      <li className="text-xl">
+        <a href="#Sect2">About</a>
+      </li>
+      <li className="text-xl">
+        <a href="#Sect3">What I do</a>
+      </li>
+      <li className="text-xl">
+        <a href="#Sect4">My Project</a>
+      </li>
     </>
   );
 }

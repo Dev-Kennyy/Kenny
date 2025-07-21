@@ -3,7 +3,7 @@ import ThreeDivs from './ThreeDivs';
 
 function Sect3() {
   return (
-    <>
+    <div id="Sect3">
       <div className="relative flex flex-col pt-9">
         <Heading />
         <img
@@ -15,7 +15,7 @@ function Sect3() {
         />
         <ThreeDivs />
       </div>
-    </>
+    </div>
   );
 }
 

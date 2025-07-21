@@ -1,4 +1,8 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
+
+import Header from './Section1/Header.jsx';
 import Sect1 from './Section1/Sect1.jsx';
 import Sect2 from './Section2/Sect2.jsx';
 import Sect3 from './Section3/Sect3.jsx';
@@ -7,40 +11,68 @@ import Sect5 from './Section5/Sect5.jsx';
 import Sect6 from './Section6/Sect6.jsx';
 import Sect7 from './Section7/Sect7.jsx';
 
-const sections = [Sect1, Sect2, Sect3, Sect4, Sect5, Sect6, Sect7];
+function FadeOnScroll({ children }) {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { threshold: 0.2 });
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 80 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.9, ease: [0.17, 0.67, 0.83, 0.67] },
-  },
-  exit: { opacity: 0, y: -40, transition: { duration: 0.4 } },
-};
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [isInView, controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 60 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 function App() {
   return (
-    <>
-      {sections.map((Section, i) => (
-        <AnimatePresence key={i}>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            exit="exit"
-            variants={fadeInUp}
-            viewport={{
-              once: false, // animation can trigger every time it enters viewport
-              amount: 0.7, // triggers when 20% of the section is visible
-            }}
-            style={{ willChange: 'opacity, transform' }}
-          >
-            <Section />
-            {i === 0 && <hr />}
-          </motion.div>
-        </AnimatePresence>
-      ))}
-    </>
+    <div className="relative bg-[rgb(249,245,242)]">
+      {/* ✅ Fixed Header */}
+      <div className="fixed left-0 right-0 top-0 z-50 bg-[rgb(249,245,242)] shadow-md">
+        <Header />
+      </div>
+
+      {/* ✅ Top padding to push down content below fixed header */}
+      <div className="space-y-10 pt-[120px]">
+        <FadeOnScroll>
+          <Sect1 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect2 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect3 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect4 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect5 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect6 />
+        </FadeOnScroll>
+        <FadeOnScroll>
+          <Sect7 />
+        </FadeOnScroll>
+      </div>
+    </div>
   );
 }
 

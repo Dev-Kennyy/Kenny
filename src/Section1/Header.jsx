@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <>
-      <div className="align-center flex justify-between px-[50px] py-[40px] sm:pt-[60px]">
+      <div className="align-center sticky top-0 z-50 flex justify-between bg-white px-[50px] py-[40px] sm:pt-[60px]">
         <div className="text-xl font-extrabold">Dev_Kenny</div>
         <div
           className="block text-[32px] sm:hidden"
@@ -23,7 +23,7 @@ function Header() {
       </div>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800">
-          <ul className="flex flex-col gap-10 text-3xl font-bold text-white">
+          <ul className="flex flex-col gap-10 text-center text-3xl font-bold text-white">
             <TheLists />
             <li>
               <button
