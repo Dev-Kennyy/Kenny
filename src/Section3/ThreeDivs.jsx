@@ -9,7 +9,7 @@ function ThreeDivs() {
           <p className="text-sm"> Build Interactive UI with React.JS</p>
         </TheDiv>
         <TheDiv>
-          <p className="font-extrabold">REST API</p>
+          <p className="font-extrabold">REST API & React Query</p>
         </TheDiv>
         <TheDiv>
           <p className="font-extrabold">Git & Github</p>

@@ -1,7 +1,13 @@
-function Card({ header, client, details, height, src }) {
+function Card({ header, client, details, height, src, link }) {
+  function handleClick(link) {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  }
   return (
     <div
-      className={`sm:flex- flex w-[250px] flex-row flex-wrap items-center gap-1 rounded-md border-b-4 border-r-2 border-black text-left shadow-lg ${height}`}
+      className={`sm:flex- flex w-[250px] flex-row flex-wrap items-center gap-1 rounded-md border-black p-2 text-left shadow-lg ${height} cursor-pointer hover:scale-105`}
+      onClick={handleClick(link)}
     >
       <img src={src} alt="" className="h-[] w-full" />
       <div className="p-2">
