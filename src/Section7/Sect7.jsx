@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa';
 
 function Sect7() {
   return (
-    <div className="align-center mt-36 flex w-full flex-col items-center justify-between gap-5 bg-white p-5 shadow shadow-orange-50 sm:flex-row">
+    <div className="align-center sticky bottom-0 mt-36 flex w-full flex-col items-center justify-between gap-5 bg-white p-5 shadow shadow-orange-50 sm:flex-row">
       <div>©️Kehinde Salimonu</div>
       <div className="flex">
         <ul className="flex gap-4">

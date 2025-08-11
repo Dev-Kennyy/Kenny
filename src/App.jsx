@@ -49,7 +49,7 @@ function App() {
       </div>
 
       {/* ✅ Top padding to push down content below fixed header */}
-      <div className="space-y-10 pt-[120px]">
+      <div className="relative space-y-10 pt-[120px]">
         <FadeOnScroll>
           <Sect1 />
         </FadeOnScroll>
