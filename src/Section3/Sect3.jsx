@@ -3,18 +3,14 @@ import ThreeDivs from './ThreeDivs';
 
 function Sect3() {
   return (
-    <div id="Sect3">
-      <div className="relative flex flex-col pt-9">
-        <Heading />
-        <img
-          src="react 1.png"
-          alt=""
-          className="absolute z-10 object-cover opacity-15"
-          style={{ right: 0, top: 0, padding: '' }}
-          sm:block
-        />
-        <ThreeDivs />
-      </div>
+    <div id="Sect3" className="relative pt-9">
+      <Heading />
+      <img
+        src="react 1.png"
+        alt="React Logo Background"
+        className="absolute right-0 top-0 z-0 hidden w-1/3 max-w-sm object-contain opacity-10 sm:block"
+      />
+      <ThreeDivs />
     </div>
   );
 }

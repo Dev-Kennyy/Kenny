@@ -1,3 +1,4 @@
+// Header.jsx
 import { useState } from 'react';
 import { FiAlignRight } from 'react-icons/fi';
 import TheLists from './TheLists.jsx';
@@ -7,27 +8,34 @@ function Header() {
 
   return (
     <>
-      <div className="align-center sticky top-0 z-50 flex justify-between bg-white px-[50px] py-[20px] sm:pt-[30px]">
+      {/* Top bar */}
+      <div className="sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4 shadow">
         <div className="text-xl font-extrabold">Dev_Kenny</div>
+
+        {/* Mobile Menu Button */}
         <div
-          className="block text-[32px] sm:hidden"
+          className="block cursor-pointer text-[32px] sm:hidden"
           onClick={() => setIsOpen(true)}
         >
           <FiAlignRight />
         </div>
+
+        {/* Desktop Menu */}
         <div className="hidden sm:block">
           <ul className="flex gap-7">
             <TheLists />
           </ul>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-95">
           <ul className="flex flex-col gap-10 text-center text-3xl font-bold text-white">
-            <TheLists />
+            <TheLists onClick={() => setIsOpen(false)} />
             <li>
               <button
-                className="mt-8 rounded bg-white px-6 py-2 text-black"
+                className="mt-6 rounded bg-white px-6 py-2 text-black"
                 onClick={() => setIsOpen(false)}
               >
                 Close

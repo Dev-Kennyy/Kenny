@@ -16,7 +16,7 @@ function Sect2() {
           would like me to bring your project to life, don't hesitate to reach
           out to me!
         </p>
-        <Button type="pink">Contact me</Button>
+        <Button type="pink">Always Available</Button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 function TheDiv({ children }) {
   return (
-    <div className="shadow- flex h-[200px] w-[250px] flex-col items-center justify-center rounded-lg border-2 border-b-4 border-r-4 border-black p-2 text-center text-black">
+    <div className="flex h-44 w-64 min-w-[14rem] flex-col items-center justify-center rounded-xl border-2 border-b-4 border-r-4 border-black bg-white p-4 text-center text-black shadow-md transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl sm:h-48 sm:w-72">
       {children}
     </div>
   );
