@@ -4,7 +4,7 @@ function Cards() {
   return (
     <div className="w-full pt-8">
       <div
-        className="flex snap-x snap-mandatory flex-nowrap gap-5 overflow-x-auto pb-6"
+        className="flex snap-x snap-mandatory flex-nowrap justify-center gap-5 overflow-x-auto pb-6"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
         <div className="w- flex-shrink-0 snap-center">
