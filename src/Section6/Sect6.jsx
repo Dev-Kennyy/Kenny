@@ -3,7 +3,7 @@ import Heading from './Heading';
 
 function Sect6() {
   return (
-    <div className="flex flex-col justify-center pt-28 text-center">
+    <div className="flex flex-col justify-center pb-60 pt-28 text-center">
       <Heading />
       <Cards />
     </div>

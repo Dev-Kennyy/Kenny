@@ -68,9 +68,12 @@ function App() {
         <FadeOnScroll>
           <Sect6 />
         </FadeOnScroll>
-        <FadeOnScroll>
+        {/* <FadeOnScroll>
           <Sect7 />
-        </FadeOnScroll>
+        </FadeOnScroll> */}
+      </div>
+      <div className="fixed left-0 right-0 top-0 z-50 bg-[rgb(249,245,242)] shadow-md">
+        <Sect7 />
       </div>
     </div>
   );

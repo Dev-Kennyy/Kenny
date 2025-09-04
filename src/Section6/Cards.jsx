@@ -3,10 +3,7 @@ import Card from './Card';
 function Cards() {
   return (
     <section className="px-2 pt-20 sm:px-6">
-      <div
-        className="m-auto w-screen"
-        style={{ WebkitOverflowScrolling: 'touch' }}
-      >
+      <div className="m-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
         <div className="flex flex-wrap justify-center gap-3">
           <Card
             img="anonymous.jpeg"
