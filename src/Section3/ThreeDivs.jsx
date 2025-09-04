@@ -14,7 +14,7 @@ function ThreeDivs() {
 
       {/* Cards wrapper */}
       <div
-        className="flex w-full gap-4 overflow-x-auto px-4 py-6 sm:flex-wrap sm:justify-center sm:overflow-visible"
+        className="flex w-full gap-4 overflow-x-auto px-4 py-6 sm:flex-wrap-reverse sm:justify-center sm:overflow-visible"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
@@ -27,7 +27,7 @@ function ThreeDivs() {
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
             <p className="font-extrabold">REST API & React Query</p>
-            <p className="text-sm">Fetch, cache & manage server state easily</p>
+            <p className="text-sm"></p>
           </TheDiv>
         </div>
 
