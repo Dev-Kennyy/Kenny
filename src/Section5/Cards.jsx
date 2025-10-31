@@ -12,7 +12,7 @@ function Cards() {
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
             header="Integrated E-Commerce"
-            client="React.Js & Tailwind"
+            client="React, Tailwind TypeScript"
             details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
             src="Screenshot (83).png"
             height="h-[350px]"
@@ -33,7 +33,7 @@ function Cards() {
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
             header="A Predictive Application Page"
-            client="HTML & Bootstrap"
+            client="React, Tailwinf & Typescript"
             details="An AI applicaton that predicts health challenges with some token. This leverages Smart Contract and third parties API"
             src="Screenshot (86).png"
             height="h-[350px]"
