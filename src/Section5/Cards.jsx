@@ -11,12 +11,12 @@ function Cards() {
 
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="E-Commerce"
+            header="Integrated E-Commerce"
             client="React.Js & Tailwind"
             details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
-            src="Screenshot (273).png"
+            src="Screenshot (83).png"
             height="h-[350px]"
-            link="https://kennyfood.vercel.app/"
+            link="https://e-commerce2-beta-eight.vercel.app"
           />
         </div>
 
@@ -32,12 +32,12 @@ function Cards() {
         </div>
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="Landing Page"
+            header="A Predictive Application Page"
             client="HTML & Bootstrap"
-            details="A clone of my university’s official landing page designed to replicate the structure, layout, & design of the original site. Built to showcase front-end skills in translating real-world designs into responsive web pages"
-            src="Screenshot (274).png"
+            details="An AI applicaton that predicts health challenges with some token. This leverages Smart Contract and third parties API"
+            src="Screenshot (86).png"
             height="h-[350px]"
-            link="https://lautechclone.netlify.app/"
+            link="https://crypto-five-roan.vercel.app"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ function LeftIntro() {
         life.
       </p>
       <Button type="yellow">
-        <a href="Dev_Kenny-CV.pdf" download>
+        <a href="MyCV.pdf" download>
           Learn About Me
         </a>
       </Button>

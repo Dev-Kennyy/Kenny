@@ -3,7 +3,7 @@ function RightIntro() {
     <div className="relative">
       <img src="Rectangle 1.png" width="" alt="" />
       <img
-        src="photo_2025-08-11_13-39-04-removebg-preview.png"
+        src="DevK_PP-removebg-preview.png"
         alt=""
         // width="230px"
         // height="100px"
