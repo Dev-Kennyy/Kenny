@@ -15,7 +15,7 @@ function Cards() {
             client="React, Tailwind TypeScript"
             details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
             src="Screenshot (83).png"
-            height="h-[350px]"
+            height="h-[370px]"
             link="https://e-commerce2-beta-eight.vercel.app"
           />
         </div>
@@ -32,11 +32,11 @@ function Cards() {
         </div>
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="A Predictive Application Page"
-            client="React, Tailwinf & Typescript"
-            details="An AI applicaton that predicts health challenges with some token. This leverages Smart Contract and third parties API"
+            header="A Predictive Application"
+            client="React, Tailwind & Typescript"
+            details="An AI applicaton that predicts health challenges with some crypto tokens. This leverages Smart Contract and third parties API fot it implementation. It predicts possible causes of sicknesses, alerts users about possible risk factors based on the Environment at the time of use"
             src="Screenshot (86).png"
-            height="h-[350px]"
+            height="h-[370px]"
             link="https://crypto-five-roan.vercel.app"
           />
         </div>
