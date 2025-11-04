@@ -8,7 +8,7 @@ function RightIntro() {
         // width="230px"
         // height="100px"
         className="absolute inset-0 m-auto rounded-full object-center"
-        style={{ top: 0, bottom: 86, left: 0, right: 0 }}
+        style={{ top: 0, bottom: 110, left: 0, right: 0 }}
       />
     </div>
   );
