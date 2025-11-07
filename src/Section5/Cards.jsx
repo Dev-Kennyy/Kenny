@@ -11,8 +11,8 @@ function Cards() {
 
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="Integrated E-Commerce"
-            client="React, Tailwind TypeScript"
+            header="Fully Integrated E-Commerce"
+            client="React, Tailwind, TypeScript"
             details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
             src="Screenshot (83).png"
             height="h-[370px]"
@@ -22,10 +22,10 @@ function Cards() {
 
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="E-Commerce"
-            client="React.Js & Tailwind"
-            details="A fully responsive and functional E-Commerce website built to simulate a modern online shopping experience. Users can browse products, add items to carts, perform authentication, order product, remove item from cart and perform other functions. Designed with a user-centric UI and optimized performance with a touch of framer motion for animating scroll."
-            src="Screenshot (272).png"
+            header="AI Application"
+            client="React.Js, TypeScript"
+            details="An interactive AI-powered web application built with React TypeScript and Tailwind CSS that allows users to chat with an intelligent assistant, generate creative responses, and experience smooth real-time interactions. Designed with an intuitive, responsive UI and enhanced with Framer Motion for engaging animations. Built with a third party API"
+            src="image.png"
             height="h-[420px]"
             link="https://ecommercekenny.vercel.app/"
           />

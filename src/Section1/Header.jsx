@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       {/* Top bar */}
-      <div className="sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4 shadow">
+      <div className="sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4">
         <div className="text-xl font-extrabold">Dev_Kenny</div>
 
         {/* Mobile Menu Button */}
