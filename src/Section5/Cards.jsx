@@ -27,7 +27,7 @@ function Cards() {
             details="An interactive AI-powered web application built with React TypeScript and Tailwind CSS that allows users to chat with an intelligent assistant, generate creative responses, and experience smooth real-time interactions. Designed with an intuitive, responsive UI and enhanced with Framer Motion for engaging animations. Built with a third party API"
             src="image.png"
             height="h-[420px]"
-            link="https://ecommercekenny.vercel.app/"
+            link="https://askkenny.vercel.app"
           />
         </div>
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">

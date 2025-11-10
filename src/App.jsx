@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="relative bg-[rgb(249,245,242)]">
       {/* ✅ Fixed Header */}
-      <div className="fixed left-0 right-0 top-0 z-50 bg-[rgb(249,245,242)] shadow-md">
+      <div className="fixed left-0 right-0 top-0 z-50 bg-[rgb(249,245,242)] border">
         <Header />
       </div>
 
