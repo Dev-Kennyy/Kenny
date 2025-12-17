@@ -20,13 +20,13 @@ function ThreeDivs() {
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
             <p className="font-extrabold">Front-End Development</p>
-            <p className="text-sm">Build Interactive UI with React.JS</p>
+            <p className="text-sm">Build Interactive UI with JavaScript frameworks & TypeScript</p>
           </TheDiv>
         </div>
 
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
-            <p className="font-extrabold">REST API & React Query</p>
+            <p className="font-extrabold">REST API & Query</p>
             <p className="text-sm"></p>
           </TheDiv>
         </div>

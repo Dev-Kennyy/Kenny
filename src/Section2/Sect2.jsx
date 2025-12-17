@@ -9,12 +9,14 @@ function Sect2() {
         </h1>
         <br />
         <p className="tracking-wide">
-          I am a passionate Front-end developer currently in my fourth year of
-          studying Computer Science & Engineering at Ladoke Akintola University
-          University of Technology. Feel free to explore my portfolio to see the
-          diverse projects I've completed. If you're interested in my work and
-          would like me to bring your project to life, don't hesitate to reach
-          out to me!
+          Passionate and results-oriented Frontend Developer with experience
+          building robust high-performance web applications using Next, React,
+          TypeScript, JavaScript and Tailwind CSS. Expert in seamless REST API
+          integration, dynamic component design, and responsive layouts. Adept
+          at transforming design prototypes into production-ready applications,
+          ensuring clean code and accessibility best practices. Proven ability
+          to work in fast-paced team environments and deliver projects that
+          enhance user engagement and overall performance.
         </p>
         <Button type="pink">Always Available</Button>
       </div>
