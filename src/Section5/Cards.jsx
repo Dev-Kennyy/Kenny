@@ -11,7 +11,7 @@ function Cards() {
 
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="Fully Integrated E-Commerce"
+            header="E-Commerce"
             client="React, Tailwind, TypeScript"
             details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
             src="Screenshot (83).png"
@@ -32,12 +32,12 @@ function Cards() {
         </div>
         <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
           <Card
-            header="A Predictive Application"
-            client="React, Tailwind & Typescript"
-            details="An AI applicaton that predicts health challenges with some crypto tokens. This leverages Smart Contract and third parties API fot it implementation. It predicts possible causes of sicknesses, alerts users about possible risk factors based on the Environment at the time of use"
-            src="Screenshot (86).png"
+            header="A Job Blog"
+            client="A Next.js Full-Stack Application"
+            details="A modern job blog platform that allows users to explore tech-related job postings, and stay updated on industry opportunities. The application features a clean UI, responsive design, and efficient data handling for a smooth user experience."
+            src="Screenshot (508).png"
             height="h-[370px]"
-            link="https://crypto-five-roan.vercel.app"
+            link="https://techjob-lake.vercel.app/"
           />
         </div>
       </div>
