@@ -19,22 +19,38 @@ function ThreeDivs() {
       >
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
-            <p className="font-extrabold">Front-End Development</p>
-            <p className="text-sm">Build Interactive UI with JavaScript frameworks & TypeScript</p>
+            <p className="mb-2 text-lg font-extrabold text-black">
+              Frontend Development
+            </p>
+            <p className="text-xs text-gray-600">
+              Crafting responsive, accessible, and user-friendly interfaces
+              with React.js, Next.js, TypeScript, JavaScript, and Tailwind CSS.
+            </p>
           </TheDiv>
         </div>
 
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
-            <p className="font-extrabold">REST API & Query</p>
-            <p className="text-sm"></p>
+            <p className="mb-2 text-lg font-extrabold text-black">
+              Backend Development
+            </p>
+            <p className="text-xs text-gray-600">
+              Building scalable APIs and server-side applications using Node.js,
+              Express.js, MongoDB, MySQL, Supabase, and RESTful services.
+            </p>
           </TheDiv>
         </div>
 
         <div className="w-72 flex-shrink-0 snap-center sm:w-80">
           <TheDiv>
-            <p className="font-extrabold">Git & Github</p>
-            <p className="text-sm">For collaboration with team and community</p>
+            <p className="mb-2 text-lg font-extrabold text-black">
+              Full-Stack Solutions
+            </p>
+            <p className="text-xs text-gray-600">
+              Developing end-to-end web applications, managing state with Redux
+              and React Query, integrating APIs, and deploying projects with
+              Git, GitHub, Vercel, and Netlify.
+            </p>
           </TheDiv>
         </div>
       </div>

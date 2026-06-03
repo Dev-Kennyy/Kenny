@@ -1,7 +1,7 @@
 function RightIntro() {
   return (
     <div className="relative">
-      <img src="Rectangle 1.png" width="" alt="" />
+      <img src="Rectangle 1.png" width="500" alt="" />
       <img
         src="DevK_PP-removebg-preview.png"
         alt=""

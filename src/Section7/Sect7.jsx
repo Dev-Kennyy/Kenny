@@ -4,8 +4,8 @@ import { FaLinkedin } from 'react-icons/fa';
 
 function Sect7() {
   return (
-    <div className="align-center fixed bottom-0 left-0 z-50 flex w-full flex-col items-center justify-between gap-5 bg-white shadow shadow-orange-50 sm:flex-row p-3">
-      <div>©️Kehinde Salimonu</div>
+    <div className="flex w-full flex-col items-center justify-between gap-5 bg-white border-t border-gray-200 p-6 sm:flex-row relative z-10">
+      <div className="text-sm font-semibold text-gray-700">© {new Date().getFullYear()} Kehinde Salimonu</div>
       <div className="flex">
         <ul className="flex gap-4">
           <li>

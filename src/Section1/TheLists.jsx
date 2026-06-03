@@ -14,7 +14,7 @@ function TheLists({ onClick }) {
       </li>
       <li className="text-xl">
         <a href="#Sect4" onClick={onClick}>
-          My Project
+          Projects
         </a>
       </li>
     </>

@@ -1,45 +1,53 @@
 import Card from './Card';
 
 function Cards() {
+  const projects = [
+    
+    {
+      header: "TCF Exam",
+      client: "Full-stack Project",
+      details: "A comprehensive TCF exam preparation platform featuring interactive practice tests, timed mock examinations, performance tracking, study resources, personalized learning paths, and real-time feedback to help candidates improve their French language proficiency.",
+      tags: ["Next.js", "Node.js", "Express", "MongoDB", "Paystack"],
+      src: "/image copy 2.png",
+      link: "https://tcf-exam-beta.vercel.app/",
+      // github: "https://github.com/Dev-Kennyy/devconnect"
+    },{
+      header: "E-Commerce",
+      client: "Full-Stack PRODUCT",
+      details: "A modern eCommerce platform featuring product catalog browsing, advanced search and filtering, shopping cart management, secure authentication, order processing, and seamless payment integration.",
+      tags: ["Next.js", "Node.js", "MongoDB", "TailwindCSS", "Paystack"],
+      src: "/image copy.png",
+      // link: "https://taskflow-saas.vercel.app",
+      github: "https://github.com/Dev-Kennyy/LappyTech/"
+    },
+    {
+      header: "AI Chat App",
+      client: "AI Intelligence SaaS",
+details: "An AI-powered assistant that helps users generate content, answer questions, solve problems, and streamline workflows through intelligent natural language interactions and real-time responses.",      tags: ["React.js", "TypeScript", "OpenAI"],
+      src: "/image copy 3.png",
+      link: 'https://askkenny.vercel.app/'
+      // github: "https://github.com/Dev-Kennyy/Kenny-AI"
+    }
+  ];
+
   return (
     <div
-      className="flex overflow-x-auto px-4 pb-6 pt-16"
+      className="flex overflow-x-auto px-4 pb-6 pt-10"
       style={{ WebkitOverflowScrolling: 'touch' }}
     >
-      <div className="m-auto flex w-max gap-4">
-        {/* Show only one card at a time on small screens, all on larger screens */}
-
-        <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
+      <div className="m-auto flex w-max gap-6 px-4">
+        {projects.map((project, idx) => (
           <Card
-            header="E-Commerce"
-            client="React, Tailwind, TypeScript"
-            details="A responsive web application that allows users to order pizza online with a smooth and intuitive user interface. Users can browse a selection of pizzas, customize their orders (e.g., size, quantity, toppings), and add items to their cart."
-            src="Screenshot (83).png"
-            height="h-[370px]"
-            link="https://e-commerce2-beta-eight.vercel.app"
+            key={idx}
+            header={project.header}
+            client={project.client}
+            details={project.details}
+            tags={project.tags}
+            src={project.src}
+            link={project.link}
+            github={project.github}
           />
-        </div>
-
-        <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
-          <Card
-            header="AI Application"
-            client="React.Js, TypeScript"
-            details="An interactive AI-powered web application built with React TypeScript and Tailwind CSS that allows users to chat with an intelligent assistant, generate creative responses, and experience smooth real-time interactions. Designed with an intuitive, responsive UI and enhanced with Framer Motion for engaging animations. Built with a third party API"
-            src="image.png"
-            height="h-[420px]"
-            link="https://askkenny.vercel.app"
-          />
-        </div>
-        <div className="w-[300px] flex-shrink-0 sm:w-[300px] sm:flex-shrink-0">
-          <Card
-            header="A Job Blog"
-            client="A Next.js Full-Stack Application"
-            details="A modern job blog platform that allows users to explore tech-related job postings, and stay updated on industry opportunities. The application features a clean UI, responsive design, and efficient data handling for a smooth user experience."
-            src="Screenshot (508).png"
-            height="h-[370px]"
-            link="https://techjob-lake.vercel.app/"
-          />
-        </div>
+        ))}
       </div>
     </div>
   );
