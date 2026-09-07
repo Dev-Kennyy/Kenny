@@ -9,17 +9,17 @@ function Cards() {
       details: "A comprehensive TCF exam preparation platform featuring interactive practice tests, timed mock examinations, performance tracking, study resources, personalized learning paths, and real-time feedback to help candidates improve their French language proficiency.",
       tags: ["Next.js", "Node.js", "Express", "MongoDB", "Paystack"],
       src: "/image copy 2.png",
-      link: "https://tcf-exam-beta.vercel.app/",
+      link: "https://freetcf.vercel.app/",
       // github: "https://github.com/Dev-Kennyy/devconnect"
     },{
-      header: "E-Commerce",
-      client: "Full-Stack PRODUCT",
-      details: "A modern eCommerce platform featuring product catalog browsing, advanced search and filtering, shopping cart management, secure authentication, order processing, and seamless payment integration.",
-      tags: ["Next.js", "Node.js", "MongoDB", "TailwindCSS", "Paystack"],
-      src: "/image copy.png",
-      // link: "https://taskflow-saas.vercel.app",
-      github: "https://github.com/Dev-Kennyy/LappyTech/"
-    },
+  header: "Church Website with C.M.S.",
+  client: "Full-Stack PRODUCT",
+  details: "A modern church website with a custom content management system for managing devotionals, sermons, events, books, jobs, meetings, and other ministry content. Features responsive page layouts, dynamic content, admin management, forms, navigation, and a clean mobile-friendly experience.",
+  tags: ["Next.js", "React", "TypeScript", "TailwindCSS", "Node.js"],
+  src: "/Screenshot (35).png",
+  link: "https://impactclm.org",
+  // github: "YOUR_GITHUB_REPOSITORY"
+},
     {
       header: "AI Chat App",
       client: "AI Intelligence SaaS",

@@ -14,7 +14,7 @@ function LeftIntro() {
         life.
       </p>
       <Button type="yellow">
-        <a href="/Kehinde Salimonu.pdf" download>
+        <a href="/SALIMONU, Kehinde Blessing - KennyDev.CV.pdf" download>
           Learn About Me
         </a>
       </Button>
