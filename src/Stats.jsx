@@ -2,43 +2,41 @@ import { useRef } from 'react';
 import { gsap, prefersReducedMotion, useGSAP } from './lib/gsap';
 
 function Stats({ metrics }) {
-  const ref = useRef(null);
+  const containerRef = useRef(null);
 
   useGSAP(
     () => {
-      const section = ref.current;
-      if (!section) return;
+      const section = containerRef.current;
+      if (!section || prefersReducedMotion()) return;
 
-      const numbers = section.querySelectorAll('[data-count]');
-      if (prefersReducedMotion()) return;
+      const items = section.querySelectorAll('[data-count]');
 
-      numbers.forEach((element) => {
-        const end = Number(element.dataset.count);
-        const decimals = Number(element.dataset.decimals ?? 0);
-        const suffix = element.dataset.suffix ?? '';
-        const value = { count: 0 };
+      items.forEach((element) => {
+        const targetValue = parseFloat(element.dataset.count);
+        const decimals = parseInt(element.dataset.decimals || '0', 10);
+        const prefix = element.dataset.prefix || '';
+        const suffix = element.dataset.suffix || '';
+        const state = { value: 0 };
 
-        element.textContent = `0${suffix}`;
-        gsap.to(value, {
-          count: end,
+        gsap.to(state, {
+          value: targetValue,
           duration: 2,
           ease: 'power2.out',
-          snap: { count: decimals === 0 ? 1 : 0.1 },
           scrollTrigger: {
             trigger: section,
             start: 'top 85%',
             once: true,
           },
           onUpdate: () => {
-            element.textContent = `${value.count.toFixed(decimals)}${suffix}`;
+            element.textContent = `${prefix}${state.value.toFixed(decimals)}${suffix}`;
           },
         });
       });
 
       gsap.from(section.querySelectorAll('.stat-item'), {
         y: 20,
-        autoAlpha: 0,
-        duration: 0.65,
+        opacity: 0,
+        duration: 0.6,
         stagger: 0.1,
         ease: 'power2.out',
         scrollTrigger: {
@@ -48,26 +46,45 @@ function Stats({ metrics }) {
         },
       });
     },
-    { scope: ref },
+    { scope: containerRef },
   );
 
   return (
-    <section className="stats-section" ref={ref} aria-label="Portfolio highlights">
-      <div className="stats-inner page-width">
-        {metrics.map((metric) => (
-          <div className="stat-item" key={metric.label}>
-            <strong
-              className="stat-value"
-              data-count={metric.value}
-              data-decimals={metric.decimals ?? 0}
-              data-suffix={metric.suffix ?? ''}
-              aria-label={`${metric.value}${metric.suffix ?? ''}`}
+    <section
+      ref={containerRef}
+      className="stats-section border-y border-[var(--color-line)] bg-[var(--color-surface)] py-12 sm:py-16"
+      aria-label="Engineering metrics and highlights"
+    >
+      <div className="page-width">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[var(--color-line)]">
+          {metrics.map((metric, idx) => (
+            <div
+              key={metric.label}
+              className={`stat-item flex flex-col items-center sm:items-start text-center sm:text-left ${
+                idx > 0 ? 'pt-6 sm:pt-0 sm:pl-8' : ''
+              }`}
             >
-              {`${metric.value}${metric.suffix ?? ''}`}
-            </strong>
-            <span className="stat-label">{metric.label}</span>
-          </div>
-        ))}
+              <div
+                className="stat-value font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--color-text)] mb-2"
+                data-count={metric.value}
+                data-decimals={metric.decimals || 0}
+                data-prefix={metric.prefix || ''}
+                data-suffix={metric.suffix || ''}
+                aria-label={`${metric.prefix || ''}${metric.value}${metric.suffix || ''} ${metric.label}`}
+              >
+                {`${metric.prefix || ''}${metric.value}${metric.suffix || ''}`}
+              </div>
+              <div className="stat-label font-mono text-xs uppercase tracking-wider text-[var(--color-dim)] mb-1">
+                {metric.label}
+              </div>
+              {metric.detail && (
+                <p className="text-xs text-[var(--color-muted)] max-w-[220px] leading-relaxed hidden sm:block">
+                  {metric.detail}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
