@@ -1,5 +1,6 @@
 import { FiArrowLeft, FiArrowRight, FiExternalLink, FiGithub } from 'react-icons/fi';
 import { Link, useParams } from 'react-router-dom';
+import LetterReveal from '../components/LetterReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import { projects } from '../data/portfolio.js';
 import NotFoundPage from './NotFoundPage.jsx';
@@ -22,13 +23,10 @@ export function ProjectDetailPage() {
         {/* ==================== TITLE SECTION ==================== */}
         <section className="w-full pt-16 pb-10 lg:px-10 md:px-8 px-5 bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
           <div className="max-w-[1400px] mx-auto text-center">
-            <Reveal
-              as="h1"
-              y={24}
+            <LetterReveal
+              lines={[project.name]}
               className="text-[52px] md:text-[90px] lg:text-[120px] font-black uppercase tracking-tighter leading-[0.95] text-[#171717] dark:text-white"
-            >
-              {project.name}
-            </Reveal>
+            />
             <Reveal
               as="p"
               y={16}
@@ -135,11 +133,11 @@ export function ProjectDetailPage() {
         {/* ==================== HERO PREVIEW IMAGE ==================== */}
         <section className="w-full py-16 lg:px-10 md:px-8 px-5 bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
           <div className="max-w-[1400px] mx-auto">
-            <Reveal y={30} duration={0.9} className="relative aspect-[16/9] w-full overflow-hidden bg-gray-100 dark:bg-[#161616] border border-[#e5e5e5] dark:border-[#222222]">
+            <Reveal y={30} duration={0.9} className="relative flex w-full justify-center overflow-hidden bg-gray-100 dark:bg-[#161616] border border-[#e5e5e5] dark:border-[#222222]">
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-full object-cover object-top"
+                className="block h-auto max-h-[85vh] w-auto max-w-full object-contain"
               />
             </Reveal>
             <p className="text-center text-xs text-[#171717]/40 dark:text-white/40 mt-3 font-medium">

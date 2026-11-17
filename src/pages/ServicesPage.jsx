@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import LetterReveal from '../components/LetterReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import RollingButton from '../components/RollingButton.jsx';
 import { capabilities } from '../data/portfolio.js';
@@ -14,15 +15,10 @@ export function ServicesPage() {
     <div className="flex flex-col bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
         <section className="w-full pt-16 pb-10 lg:px-10 md:px-8 px-5 bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
           <div className="max-w-[1400px] mx-auto text-center">
-            <Reveal
-              as="h1"
-              y={24}
+            <LetterReveal
+              lines={["What's", 'Available?']}
               className="text-[50px] md:text-[80px] lg:text-[110px] font-black uppercase tracking-tighter leading-[0.95] text-[#171717] dark:text-white"
-            >
-              What&apos;s
-              <br />
-              Available?
-            </Reveal>
+            />
           </div>
         </section>
 

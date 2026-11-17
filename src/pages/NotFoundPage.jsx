@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
+import LetterReveal from '../components/LetterReveal.jsx';
 import { easeOutExpo } from '../lib/motion';
 
 export function NotFoundPage() {
@@ -39,19 +40,16 @@ export function NotFoundPage() {
               Lost In The Build
             </motion.span>
 
-            <motion.h1
-              {...fade(0.05, 24)}
+            <LetterReveal
+              lines={['404']}
               className="text-[80px] md:text-[140px] lg:text-[180px] font-black uppercase tracking-tighter leading-none text-[#171717] dark:text-white mb-6"
-            >
-              404
-            </motion.h1>
+            />
 
-            <motion.h2
-              {...fade(0.15)}
+            <LetterReveal
+              as="h2"
+              lines={['This Page Took A Wrong Turn']}
               className="text-[28px] md:text-[40px] font-black uppercase tracking-tight text-[#171717] dark:text-white mb-4"
-            >
-              This Page Took A Wrong Turn
-            </motion.h2>
+            />
 
             <motion.p
               {...fade(0.22, 18)}

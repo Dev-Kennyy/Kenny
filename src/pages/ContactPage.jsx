@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiCheck, FiCopy } from 'react-icons/fi';
+import LetterReveal from '../components/LetterReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import RollingButton from '../components/RollingButton.jsx';
 import { personalInfo } from '../data/portfolio.js';
@@ -69,15 +70,10 @@ export function ContactPage() {
         {/* ==================== TITLE ==================== */}
         <section className="w-full pt-16 pb-20 lg:px-10 md:px-8 px-5 bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
           <div className="max-w-[1400px] mx-auto text-center">
-            <Reveal
-              as="h1"
-              y={24}
+            <LetterReveal
+              lines={['Contact', 'With Me']}
               className="text-[50px] md:text-[80px] lg:text-[110px] font-black uppercase tracking-tighter leading-[0.95] text-[#171717] dark:text-white"
-            >
-              Contact
-              <br />
-              With Me
-            </Reveal>
+            />
           </div>
         </section>
 
@@ -269,10 +265,11 @@ export function ContactPage() {
                         <option value="Full-Stack Platforms">Full-Stack Platforms</option>
                         <option value="UI / UX Thinking">UI / UX Thinking</option>
                         <option value="Product Architecture">Product Architecture</option>
+                        <option value="Product Architecture">Custom Consultation</option>
                       </select>
                     </div>
 
-                    <div className="flex flex-col gap-2">
+                    {/* <div className="flex flex-col gap-2">
                       <label className="text-[13px] font-bold text-[#171717] dark:text-white">
                         Project Budget
                       </label>
@@ -288,7 +285,7 @@ export function ContactPage() {
                         <option value="$15,000+">$15,000+</option>
                         <option value="Flexible">Flexible</option>
                       </select>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="flex flex-col gap-2">

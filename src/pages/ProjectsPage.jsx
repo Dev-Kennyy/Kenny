@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import LetterReveal from '../components/LetterReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import { projects } from '../data/portfolio.js';
 import { arrowRoll, easeArrow, easeOutExpo } from '../lib/motion';
@@ -36,15 +37,10 @@ export function ProjectsPage() {
     <div className="flex flex-col bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
         <section className="w-full pt-16 pb-10 lg:px-10 md:px-8 px-5 bg-white dark:bg-[#0c0c0c] transition-colors duration-200">
           <div className="max-w-[1400px] mx-auto text-center">
-            <Reveal
-              as="h1"
-              y={24}
+            <LetterReveal
+              lines={['Featured', 'Projects']}
               className="text-[50px] md:text-[80px] lg:text-[110px] font-black uppercase tracking-tighter leading-[0.95] text-[#171717] dark:text-white"
-            >
-              Featured
-              <br />
-              Projects
-            </Reveal>
+            />
           </div>
         </section>
 
@@ -101,7 +97,7 @@ export function ProjectsPage() {
                         <img
                           src={project.image}
                           alt={project.name}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                          className="w-full h-full object-cover object-top origin-top transition-transform duration-700 ease-out group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 dark:group-hover:bg-white/5 transition-colors duration-500" />
                       </Link>

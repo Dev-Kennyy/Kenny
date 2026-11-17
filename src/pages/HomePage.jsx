@@ -10,6 +10,7 @@ import {
 import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import CountUp from '../components/CountUp.jsx';
+import LetterReveal from '../components/LetterReveal.jsx';
 import { MaskLine, MaskReveal } from '../components/MaskReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import ReviewsCarousel from '../components/ReviewsCarousel.jsx';
@@ -47,7 +48,7 @@ function ProjectTile({ project, index }) {
         <img
           src={project.image}
           alt={project.name}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className="w-full h-full object-cover object-top origin-top transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 dark:group-hover:bg-white/5 transition-colors duration-500" />
       </Link>
@@ -114,22 +115,10 @@ function HomePage() {
               </MaskLine>
             </div>
             <div className="text-left mt-2 md:mt-10">
-              <div className="overflow-hidden">
-                <MaskLine
-                  as="h1"
-                  className="text-left text-[clamp(2.5rem,14vw,9.625rem)] leading-[1.05] tracking-[-.08em] md:leading-[1.05] lg:leading-[160px] font-black uppercase text-[#171717] dark:text-white"
-                >
-                  ENGINEER+
-                </MaskLine>
-              </div>
-              <div className="overflow-hidden">
-                <MaskLine
-                  as="h2"
-                  className="text-left text-[clamp(2.5rem,14vw,9.625rem)] leading-[1.05] tracking-[-.08em] md:leading-[1.05] lg:leading-[160px] font-black uppercase text-[#171717] dark:text-white"
-                >
-                  Developer
-                </MaskLine>
-              </div>
+              <LetterReveal
+                lines={['ENGINEER+', 'Developer']}
+                className="text-left text-[clamp(2.5rem,14vw,9.625rem)] leading-[1.05] tracking-[-.08em] md:leading-[1.05] lg:leading-[160px] font-black uppercase text-[#171717] dark:text-white"
+              />
             </div>
           </MaskReveal>
         </section>
@@ -203,7 +192,7 @@ function HomePage() {
               <img
                 src={personalInfo.portrait}
                 alt={personalInfo.name}
-                className="w-full h-full object-cover grayscale contrast-125 brightness-105 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-[1.5s] ease-out"
+                className="w-full h-full object-cover object-top origin-top grayscale contrast-125 brightness-105 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-[1.5s] ease-out"
               />
               <div className="absolute inset-0 bg-black/10 dark:bg-black/30 group-hover:bg-transparent transition-colors duration-1000" />
               <div className="absolute bottom-0 left-0 p-8 transform translate-y-full group-hover:translate-y-0 transition-transform duration-700 bg-gradient-to-t from-black to-transparent w-full">
@@ -224,9 +213,11 @@ function HomePage() {
               Projects
             </Reveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
+            <div className="grid grid-cols-1 items-start gap-y-14 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-20">
               {projects.map((project, index) => (
-                <ProjectTile key={project.slug} project={project} index={index} />
+                <div key={project.slug} className="group relative">
+                  <ProjectTile project={project} index={index} />
+                </div>
               ))}
             </div>
           </div>

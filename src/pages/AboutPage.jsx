@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LetterReveal from '../components/LetterReveal.jsx';
 import Reveal from '../components/Reveal.jsx';
 import RollingButton from '../components/RollingButton.jsx';
 import { education, experience, personalInfo, technologies } from '../data/portfolio.js';
@@ -8,13 +9,10 @@ export function AboutPage() {
     <div className="flex flex-col bg-white dark:bg-[#0c0c0c] overflow-hidden transition-colors duration-200">
         <section className="w-full pt-32 pb-20 lg:px-10 md:px-8 px-5">
           <div className="max-w-[1400px] mx-auto flex flex-col items-center text-center">
-            <Reveal
-              as="h1"
-              y={24}
+            <LetterReveal
+              lines={["I'M Kehinde", 'Salimonu']}
               className="text-[60px] md:text-[100px] lg:text-[140px] font-black uppercase tracking-tighter leading-[0.85] mb-12 text-[#171717] dark:text-white"
-            >
-              I&apos;M Kehinde <br /> Salimonu
-            </Reveal>
+            />
 
             <Reveal
               y={0}

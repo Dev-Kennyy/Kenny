@@ -73,6 +73,7 @@ export const projectCategories = [
   'AI & Utility',
 ];
 
+
 export const projects = [
   {
     slug: 'lappytech',
@@ -80,26 +81,26 @@ export const projects = [
     name: 'LappyTech E-Commerce',
     category: 'Full-Stack',
     type: 'Full-stack platform',
-    tagline: 'Modern electronics commerce platform with real-time inventory and payments.',
+    tagline: 'Modern electronics commerce platform with product discovery, inventory management, and online payments.',
     description:
-      'A comprehensive e-commerce platform with interactive product browsing, secure checkout, persistent cart management, and inventory tracking.',
+      'An e-commerce platform for electronics shopping, featuring product browsing, cart management, checkout, payment processing, and inventory management.',
     extendedOverview:
-      'LappyTech was engineered to provide customers with an effortless computer shopping experience. The platform integrates instant catalog filtering, dynamic product detail views, persistent shopping carts, and a streamlined multi-step checkout workflow connected directly to the Paystack payment gateway.',
+      'LappyTech provides customers with an online electronics shopping experience. The platform combines product discovery, category filtering, product detail pages, persistent shopping carts, and a checkout workflow integrated with Paystack.',
     highlights: [
-      'Interactive catalog browsing with category filtering and real-time search',
-      'Secure transaction processing with verified Paystack payment integration',
-      'Persistent cart state management with real-time quantity validation',
-      'Backend inventory management APIs with structured MongoDB schemas',
+      'Interactive product catalog with category filtering and search functionality',
+      'Paystack payment gateway integration for online transactions',
+      'Persistent shopping cart with product quantity management',
+      'Backend APIs and MongoDB data models for product and order management',
     ],
     architecture:
-      'Frontend architected with Next.js and Tailwind CSS for rapid server-side rendering and responsive layouts. Backend powered by Node.js and Express RESTful endpoints, with MongoDB storing product models, order histories, and transaction logs.',
+      'Built with Next.js and Tailwind CSS on the frontend, Node.js and Express for backend services, and MongoDB for application data storage.',
     outcomes:
-      'Delivered a frictionless checkout flow with sub-second page transitions and secure order confirmation notices.',
+      'Delivered an integrated e-commerce experience covering product discovery, shopping cart management, and online checkout.',
     technologies: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Paystack', 'Tailwind CSS', 'REST APIs'],
     image: '/lappytech.png',
     imageAlt: 'LappyTech E-commerce storefront and laptop listing page preview',
-    href: 'https://lappytech.vercel.app/',
-    github: 'https://github.com/Dev-Kennyy',
+    href: '',
+    github: '',
     status: 'Live in Production',
     year: '2025',
     client: 'LappyTech Retail',
@@ -111,26 +112,26 @@ export const projects = [
     name: 'Impact CLM',
     category: 'CMS & Platform',
     type: 'Content-managed website',
-    tagline: 'Custom organization platform and CMS for sermons, events, and ministry media.',
+    tagline: 'A digital platform and content management system for ministry resources and media.',
     description:
-      'A custom church platform and CMS that brings sermons, devotionals, events, and ministry resources together.',
+      'A church and ministry platform that brings sermons, devotionals, events, announcements, and ministry resources together.',
     extendedOverview:
-      'Impact Christian Leadership Ministry needed a unified digital hub to connect members and international visitors with teachings, events, announcements, and ministry resources. The platform features an administrative CMS empowering non-technical team members to manage media releases independently.',
+      'Impact Christian Leadership Ministry needed a unified digital platform through which members and visitors could access ministry teachings, events, announcements, and media resources. The solution includes a custom content management system for administrative content management and publishing.',
     highlights: [
-      'Custom Content Management System (CMS) enabling self-service content publishing',
-      'Responsive audio and video sermon library with categorization and metadata',
-      'Interactive calendar for announcements, upcoming conferences, and registrations',
-      'Mobile-first responsive architecture tested across varying network conditions',
+      'Custom content management system for administrative content publishing',
+      'Sermon and ministry media library with content categorization',
+      'Dedicated sections for ministry announcements and events',
+      'Responsive interfaces for desktop and mobile users',
     ],
     architecture:
-      'Engineered with Next.js, React, and TypeScript for structured typing and component modularity. Styled with Tailwind CSS for clean layout aesthetics, backed by decoupled Node.js services for media and content delivery.',
+      'Developed using Next.js, React, and TypeScript, with Tailwind CSS for interface styling and Node.js for backend services and content delivery.',
     outcomes:
-      'Empowered ministry administrators to publish sermons and update event itineraries without technical support, boosting congregation digital engagement.',
+      'Provided the ministry with a centralized digital platform for publishing and organizing its content and resources.',
     technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'CMS'],
     image: '/Screenshot%20(35).png',
     imageAlt: 'Impact CLM church platform homepage and sermon portal preview',
     href: 'https://impactclm.org',
-    github: 'https://github.com/Dev-Kennyy',
+    github: '',
     status: 'Live in Production',
     year: '2025',
     client: 'Impact Christian Leadership Ministry',
@@ -141,27 +142,27 @@ export const projects = [
     number: '03',
     name: 'Free TCF Exam Prep',
     category: 'Frontend & Education',
-    type: 'Online exam platform',
-    tagline: 'Focused test-preparation platform helping candidates practice French exam modules.',
+    type: 'Online examination platform',
+    tagline: 'An interactive French language examination preparation platform.',
     description:
-      'A focused test-preparation platform that helps learners practice, track progress, and prepare with confidence.',
+      'An online examination platform designed to help candidates prepare for the Test de Connaissance du Français (TCF) through structured practice and simulated examinations.',
     extendedOverview:
-      'Free TCF is an accessible web examination platform designed for international candidates preparing for the Test de Connaissance du Français (TCF). It delivers realistic simulated exams with time constraints, instant question scoring, listening comprehension modules, and detailed category diagnostics.',
+      'Free TCF provides an accessible preparation environment for French language examination candidates. The platform incorporates simulated examination sessions, timed questions, listening comprehension activities, automated scoring, and performance feedback.',
     highlights: [
-      'Timed simulated examinations replicating official exam conditions',
-      'Integrated audio player modules tailored for listening comprehension sections',
-      'Real-time scoring algorithm with breakdown across grammar, listening, and reading',
-      'Progress persistence allowing candidates to evaluate historical performance',
+      'Timed examination sessions for structured practice',
+      'Audio-based listening comprehension modules',
+      'Automated question scoring and performance evaluation',
+      'Performance breakdown across examination categories',
     ],
     architecture:
-      'Constructed with Next.js, React, and TypeScript to ensure strict state handling during active test sessions. Optimized with Tailwind CSS and Jest unit tests for score calculation accuracy.',
+      'Developed with Next.js, React, and TypeScript, with Tailwind CSS for responsive interfaces and Jest for testing application logic.',
     outcomes:
-      'Streamlined exam preparation for hundreds of international candidates, providing immediate test evaluation without page reload friction.',
+      'Created an interactive examination preparation experience with timed practice, automated evaluation, and performance feedback.',
     technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Jest'],
     image: '/image%20copy%202.png',
     imageAlt: 'Free TCF exam preparation module interface preview',
     href: 'http://freetcf.vercel.app/',
-    github: 'https://github.com/Dev-Kennyy',
+    github: '',
     status: 'Live in Production',
     year: '2025',
     client: 'Language Learning Project',
@@ -173,32 +174,107 @@ export const projects = [
     name: 'AskKenny AI Assistant',
     category: 'AI & Utility',
     type: 'AI assistant application',
-    tagline: 'Conversational AI tool for natural language assistance, drafting, and problem solving.',
+    tagline: 'A conversational AI application for information, content generation, and problem-solving.',
     description:
-      'An AI-powered assistant for generating content, answering questions, solving problems, and streamlining workflows through natural language.',
+      'An AI-powered conversational application designed to assist with natural language queries, content drafting, technical questions, and everyday problem-solving.',
     extendedOverview:
-      'AskKenny is a responsive AI chat application designed to assist developers and creators with content synthesis, prompt engineering, code troubleshooting, and structured problem-solving through natural dialogue.',
+      'AskKenny is a conversational AI application that provides a structured interface for interacting with AI models. It focuses on accessible conversations, content generation, technical assistance, and natural language problem-solving.',
     highlights: [
-      'Natural language conversation interface powered by OpenAI model completions',
-      'Markdown rendering with code syntax highlighting and quick-copy utilities',
-      'Configurable prompt contexts tailored for debugging, technical writing, and brainstorming',
-      'Responsive, distraction-free conversational UI with keyboard shortcuts',
+      'Conversational interface integrated with OpenAI models',
+      'Markdown rendering and code syntax highlighting',
+      'Copy utilities for generated text and code',
+      'Responsive chat interface with configurable prompt contexts',
     ],
     architecture:
-      'Built in React and TypeScript with Framer Motion transitions. Integrates secure API endpoints communicating with OpenAI models, featuring client-side streaming response states and session storage.',
+      'Built with React and TypeScript, using Framer Motion for interface transitions and API integration for AI-powered responses.',
     outcomes:
-      'Provides a clean, lightweight personal assistant tool with responsive feedback and ergonomic typing flows.',
+      'Developed a lightweight conversational interface for accessing AI-powered assistance through a responsive web application.',
     technologies: ['React', 'TypeScript', 'OpenAI API', 'Tailwind CSS', 'Framer Motion'],
     image: '/image%20copy%203.png',
     imageAlt: 'AskKenny AI conversational assistant interface preview',
     href: 'https://askkenny.vercel.app/',
-    github: 'https://github.com/Dev-Kennyy',
+    github: '',
     status: 'Live in Production',
     year: '2025',
     client: 'Personal Innovation Project',
     role: 'Creator & Full-Stack Developer',
   },
+ 
+    
+  {
+    slug: 'iultimate',
+    number: '08',
+    name: 'iUltimate',
+    category: 'Frontend Engineering',
+    type: 'Web application',
+    tagline: 'A web development project demonstrating modern frontend implementation.',
+    description:
+      'A frontend development project built with modern web technologies.',
+    extendedOverview:
+      'iUltimate is a web development project within the developer portfolio, built using React and Vite.',
+    highlights: [
+      'React-based frontend implementation',
+      'Vite-powered development environment',
+      'Component-based application development',
+    ],
+    architecture:
+      'Built using React and Vite.',
+    outcomes:
+      'Developed and deployed a React-based web project.',
+    technologies: ['React', 'Vite', 'JavaScript'],
+    image: '/iultimate.png',
+    imageAlt: 'iUltimate web project interface',
+    href: '',
+    github: '',
+    status: 'Deployed',
+    year: '2026',
+    client: 'Personal Project',
+    role: 'Frontend Developer',
+  },
+  {
+    slug: 'kdp-victor',
+    number: '09',
+    name: 'KDP Victor',
+    category: 'Full-Stack & EdTech',
+    type: 'Course management and learning platform',
+    tagline: 'A digital platform for online courses, student enrollment, and cohort-based learning.',
+    description:
+      'A course management platform developed for a financial management coach and KDP mentor, supporting course offerings, student registration, and payment management.',
+    extendedOverview:
+      'KDP Victor is a digital platform for Ayantoyinbo Victor, designed to support the delivery and management of online courses and cohort-based training programmes. The platform brings course administration, student registration, enrollment management, and payment workflows into a centralized application.',
+    highlights: [
+      'Course and training track creation and management',
+      'Student registration and enrollment workflows',
+      'Administrative interface for viewing registered students',
+      'Paystack payment integration and payment workflow management',
+      'Cloudinary integration for image and file uploads',
+      'Database-backed application workflows for course and student records',
+    ],
+    architecture:
+      'Designed with Next.js for frontend and backend development, MongoDB for data persistence, and Cloudinary for media and file management. Paystack handles payment processing, while GSAP and Framer Motion support interface animations and interactions.',
+    outcomes:
+      'Designed to centralize course administration, student enrollment, and payment management for online training and cohort-based programmes.',
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'MongoDB',
+      'Paystack',
+      'Cloudinary',
+      'GSAP',
+      'Framer Motion',
+    ],
+    image: '/victorkdp.png',
+    imageAlt: 'KDP Victor online course and student management platform',
+    href: 'https://victorkdp.vercel.app/',
+    github: '',
+    status: 'Project Development',
+    year: '2026',
+    client: 'Ayantoyinbo Victor',
+    role: 'Full-Stack Developer',
+  },
 ];
+
 
 export const capabilities = [
   {
@@ -275,7 +351,7 @@ export const experience = [
   {
     period: 'November 2025 – Present',
     role: 'Full-Stack Developer (Contract & Freelance)',
-    organization: 'Independent Engineering',
+    organization: 'Remote',
     location: 'Nigeria / Remote',
     summary:
       'Developing and shipping production-ready web applications for international clients across education, retail, and organizational sectors.',
@@ -285,6 +361,20 @@ export const experience = [
       'Implemented payment integrations (Paystack), CMS workflows, and RESTful APIs.',
     ],
     technologies: ['Next.js', 'React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+  },
+  {
+    period: '2026',
+    role: 'Full-Stack Developer (Contract)',
+    organization: 'ICLM (Impact Christian Leadership Ministry)',
+    location: 'Nigeria',
+    summary:
+      'Engineered a modern web platform and custom content management system for media and sermon distributions.',
+    achievements: [
+      'Delivered a custom CMS allowing administrators to manage sermons, events, and media without developers.',
+      'Constructed modular, mobile-responsive interfaces using Next.js and Tailwind CSS.',
+      'Optimized media playback modules for reliable streaming across low-bandwidth connections.',
+    ],
+    technologies: ['Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'CMS'],
   },
   {
     period: 'August 2025 – November 2025',
@@ -301,24 +391,11 @@ export const experience = [
     ],
     technologies: ['Next.js', 'React', 'TypeScript', 'WebSockets', 'Tailwind CSS', 'Jest'],
   },
-  {
-    period: '2025',
-    role: 'Full-Stack Developer (Contract)',
-    organization: 'ICLM (Impact Christian Leadership Ministry)',
-    location: 'Nigeria',
-    summary:
-      'Engineered a modern web platform and custom content management system for media and sermon distributions.',
-    achievements: [
-      'Delivered a custom CMS allowing administrators to manage sermons, events, and media without developers.',
-      'Constructed modular, mobile-responsive interfaces using Next.js and Tailwind CSS.',
-      'Optimized media playback modules for reliable streaming across low-bandwidth connections.',
-    ],
-    technologies: ['Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'CMS'],
-  },
+  
   {
     period: '2025',
     role: 'Frontend Developer (Contract)',
-    organization: 'Healthline Startup',
+    organization: 'Table Health Solution Inc.',
     location: 'Remote',
     summary:
       'Collaborated on building a digital health tech application supporting patient consultations and recommendations.',
